@@ -1,0 +1,16 @@
+<nav>
+    
+    <h1>MY BOOKS</h1>
+    <a *ngIf="!this.userService.logueado" routerLink="" >Home</a>
+    <a *ngIf="this.userService.logueado" routerLink="books">Libros</a>
+    <a *ngIf="!this.userService.logueado" routerLink="register" >register</a>
+    <a *ngIf="this.userService.logueado" routerLink="add-book">Añadir Libro</a>
+    <a *ngIf="this.userService.logueado" routerLink="updatebook">Modificar Libro</a>
+    <a *ngIf="this.userService.logueado" routerLink="profile">Perfil</a>
+    <a *ngIf="!this.userService.logueado" routerLink="login" >Login</a>
+
+</nav>
+
+
+
+

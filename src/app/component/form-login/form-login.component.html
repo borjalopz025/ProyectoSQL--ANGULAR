@@ -1,0 +1,27 @@
+ <div class="container">
+    <form class="main" [formGroup]="myForm" >
+    
+        <div class="flex" >
+            <label for="email" class="lab">Email</label>
+            <input type="email" name="email" formControlName="email"
+            [ngClass]="{'is-invalid': (myForm.get('email').dirty || myForm.get('email').touched) && !myForm.get('email').valid}" #email>
+            <div *ngIf="!myForm.get('email').valid"  class="obligatorio2">
+                <div id="block"  *ngIf="myForm.get('email').errors.required">La direcion email es obligatoria</div>
+                <div id="block"  *ngIf="myForm.get('email').errors.email">Direccion email incorrecta</div>
+            </div>
+        </div>
+        <div class="flex">
+            <label for="password">Password</label>
+            <input type="password" name="password" formControlName="password"
+            [ngClass]="{ 'is-invalid':(myForm.get('password').dirty || myForm.get('password').touched) && !myForm.get('password').valid }" #password>
+            <div *ngIf=" !myForm.get('password').valid "  class="obligatorio">
+                <div  id="block" *ngIf="myForm.get('password').errors.required"> La contraseña es obligatoria</div>
+                <div id="block"  *ngIf="myForm.get('password').errors.minlength"> La contraseña es incorrecta</div>
+            </div>
+        </div>
+        <div class="boton">
+            <button class="botonletras" (click)="iniciarSesion(email.value,password.value)" [disabled]="myForm.invalid">Submit</button>
+        </div>
+    </form>
+</div> 
+

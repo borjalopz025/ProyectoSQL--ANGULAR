@@ -1,0 +1,23 @@
+<main>
+    <div class="caja1">
+        <div class="cont-img">
+            <img src="{{ user.photo }}" alt="">
+        </div>
+        <div class="text">
+            <h1>{{ user.name}}  {{user.last_name }}</h1>
+            <p>Nombre         <input type="text" placeholder="{{user.name }}"></p>
+            <p>Apellido       <input type="text" placeholder="{{user.last_name}}"></p>
+            <p>Correo      <input class="separar" type="text" placeholder="{{user.email}}"></p>
+        </div>
+    </div>
+    <div class="caja2">
+        <h1 id="titu">Editar Datos</h1>
+        <div class="bloque">
+            <input class="in" type="text" placeholder="nombre" #nombre>
+            <input class="in" type="text" placeholder="apellido" #apellido>
+            <input class="in" type="text" placeholder="correo" #correo>
+            <input class="in" type="url" placeholder="url" #url>
+        </div>
+        <button (click)="modificar(nombre,apellido,correo,url)">Modificar</button>
+    </div>
+</main>

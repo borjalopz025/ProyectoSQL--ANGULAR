@@ -1,0 +1,28 @@
+
+
+<div>
+    <button type="button" (click)="eliminar()" id="botonx" >X</button>
+</div>
+        <div class="cajon">
+           
+            <div class="fot">
+                <img src="{{libro.photo}}" alt="">
+            </div>
+            <div  class="letras">
+                <p>{{libro.type}}</p>
+                <hr>
+                <h4>{{libro.title}}</h4>
+                <p>Autor: {{libro.author}}</p>
+                <p>{{libro.id_book | codigo}}</p>
+                <p class="precio">{{libro.price}}€</p>
+                
+                <hr id="segunda">
+                <div>
+                    <button class="button" [ngClass]="par ? 'claseNaranja'  : 'claseAzul'">Comprar</button>
+                </div>
+                
+            </div>
+        </div>
+  
+
+  

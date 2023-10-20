@@ -1,0 +1,33 @@
+.but{
+    width: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.678);
+}
+.but:hover {
+    color: white;
+    background-color:greenyellow;
+  }
+  
+  h1{
+    margin-bottom: 3%;
+}
+input{
+    margin-bottom: 1%;
+    width: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    background-color: rgb(235, 231, 231);
+    border-radius: 5px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

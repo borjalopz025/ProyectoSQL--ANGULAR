@@ -1,0 +1,26 @@
+<main>
+<div *ngIf="books.length != 0; else lista">
+    <h1 class="tit">
+        lista de libros
+    </h1>
+    <input class="buscado" type="number" placeholder="Buscador de libros" #buscar><button type="button" class="butt" (click)="clicar(buscar.valueAsNumber)">Buscar</button> 
+    <div id="card">
+        <ng-container class="flex" *ngFor="let lib of books ; let i = even; let o = odd">
+        
+            <app-card [libro]="lib" (eliminarLibro)="idEliminar($event)" [par]="par"></app-card>
+        </ng-container>
+    </div>
+</div>
+<ng-template #lista>
+    <h1>
+        No hay lista de libros
+    </h1>
+  
+
+
+
+</ng-template>
+   
+  
+</main> 
+

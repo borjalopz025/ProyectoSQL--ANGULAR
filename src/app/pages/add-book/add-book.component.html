@@ -1,0 +1,11 @@
+<main>
+    <div class="formulario">
+        <h1>Añadir libro</h1>
+        <input type="text" placeholder="Titulo" #titulo>
+        <input type="text" placeholder="Tapa blanda/dura" #tapa>
+        <input type="text" placeholder="Autor" #autor>
+        <input type="number" placeholder="Precio" #precio>
+        <input type="url" placeholder="Photo" #url>
+        <button (click)="agregar(titulo,tapa,autor,precio,url)" class="but">Agregar libro</button>
+    </div>
+</main>

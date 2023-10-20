@@ -1,0 +1,56 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+label{
+    margin-right: 15%;
+}
+.lab{
+    margin-right: 17%;
+}
+input{
+    width: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    border-radius: 5px;
+}
+.boton{
+    width: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+button{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    background-color: aqua;
+    color: white;
+}
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.obligatorio2{
+    color: red;
+    font-size: small;
+    margin-right: 6.5%;
+}
+.obligatorio{
+    color: red;
+    font-size: small;
+    margin-right: 8%;
+}
